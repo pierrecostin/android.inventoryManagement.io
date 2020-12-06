@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+  >
+    <item
+        android:id="@+id/lister"
+        android:orderInCategory="300"
+        android:title="lister"
+        app:showAsAction="always"></item>
+
+    <item
+        android:id="@+id/categorie"
+        android:orderInCategory="500"
+        android:title="categorie"
+        app:showAsAction="always"></item>
+
+    <item
+        android:id="@+id/total"
+        android:orderInCategory="500"
+        android:title="total"
+        app:showAsAction="always"></item>
+
+</menu>

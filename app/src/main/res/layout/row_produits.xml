@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="08dp"
+    android:background="@android:color/darker_gray"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="13dp"
+    android:elevation="@dimen/cardview_default_elevation"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        >
+
+    <TextView
+        android:id="@+id/nomP"
+        android:text="nom produit"
+        android:textSize="14dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"/>
+    <TextView
+        android:id="@+id/categP"
+        android:text="categorie produit"
+        android:layout_width="wrap_content"
+        android:textSize="14dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/nomP"
+        app:layout_constraintTop_toTopOf="@id/nomP"
+        android:paddingEnd="10dp"
+        />
+    <TextView
+        android:id="@+id/prixP"
+        android:text="00"
+        android:layout_width="wrap_content"
+        android:textSize="14dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/categP"
+        app:layout_constraintTop_toTopOf="@id/nomP"
+        android:paddingEnd="10dp"
+        />
+    <TextView
+        android:id="@+id/stockP"
+        android:text="000"
+        android:layout_width="wrap_content"
+        android:textSize="14dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/prixP"
+        app:layout_constraintTop_toTopOf="@id/nomP"
+        />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
